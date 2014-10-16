@@ -140,7 +140,7 @@
         width: 100% !important;
     }
 	
-	.portfolio-items-xxx, .thumb-label-item {
+	.portfolio-items-xxx, .thumb-label-item-xxx {
         width: 100% !important;
     }
 
@@ -1041,7 +1041,7 @@
     }
 	
 	.thumb-label-item-xxx {
-        width: 207px;
+        width: 210px;
     }
 
     .portfolio-items {
@@ -1049,7 +1049,7 @@
     }
 	
 	.portfolio-items-xxx {
-        width: 848px;
+        width: 860px;
     }
 
     .boxed .thumb-label-item {
@@ -1078,7 +1078,7 @@
         width: 386px;
     }
 	
-	.portfolio-items-xxx.portfolio-items-cols3 .thumb-label-item {
+	.portfolio-items-xxx.portfolio-items-cols3 .thumb-label-item-xxx {
         width: 386px;
     }
 
@@ -1100,7 +1100,7 @@
     }
 	
 	 .portfolio-items-xxx, .boxed .portfolio-items-xxx {
-        width: 724px;
+        width: 533px;
     }
 
     /* 2 cols & 2 cols boxed */
@@ -1114,7 +1114,7 @@
         width: 237px;
     }
 	
-	.portfolio-items-xxx.portfolio-items-cols3 .thumb-label-item {
+	.portfolio-items-xxx.portfolio-items-cols3 .thumb-label-item-xxx {
         width: 237px;
     }
 

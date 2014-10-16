@@ -1102,7 +1102,7 @@ input,
 select,
 textarea {
     font-family: "Open Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #666666;
+    color: #fff;
     margin: 0;
     font-size: 13px;
     line-height: 20px;
@@ -4527,7 +4527,7 @@ Portfolio Items
 }
 
 .thumb-label-item-xxx {
-    width: 229px;
+    width: 170px;
 }
 
 .portfolio-items {
@@ -4535,7 +4535,7 @@ Portfolio Items
 }
 
 .portfolio-items-xxx {
-    width: 940px;
+    width: 700px;
 }
 
 /**/
