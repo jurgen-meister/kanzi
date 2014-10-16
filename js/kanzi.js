@@ -269,6 +269,16 @@ jQuery(document).ready(function($) {
             $('#masonry-elements,.portfolio-items').isotope('reLayout');
         }, 500);
     });
+	
+	 $(window).resize(function() {
+        centeringBullets();
+
+        $('.tab-container').trigger('easytabs:midTransition');
+        $('#masonry-elements,.portfolio-items-xxx').isotope('reLayout');
+        setTimeout(function() {
+            $('#masonry-elements,.portfolio-items-xxx').isotope('reLayout');
+        }, 500);
+    });
 
     //place holder fallback
     $('input, textarea').placeholder();
@@ -317,6 +327,10 @@ jQuery(document).ready(function($) {
         setInterval(function() {
             $('#masonry-elements,.portfolio-items').isotope('reLayout');
         }, 1000);
+		
+		setInterval(function() {
+            $('#masonry-elements,.portfolio-items-xxx').isotope('reLayout');
+        }, 1000);
     }
     ;
 
@@ -346,10 +360,41 @@ jQuery(document).ready(function($) {
             //  animationEngine: 'css'
         });
     }
+	
+	
+	$('.portfolio-filter-container a').click(function() {
+        $cont.isotope({
+            filter: this.getAttribute('data-filter')
+        });
 
+        return false;
+    });
+
+	var $cont2 = $('.portfolio-items-xxx');
+
+	if ($("html").hasClass("lt-ie9")) {
+        $cont2.isotope({
+            itemSelector: '.portfolio-items-xxx .thumb-label-item-xxx',
+            masonry: {columnWidth: $('.isotope-item:first').width(), gutterWidth: 6},
+            filter: '*',
+            transformsEnabled: false,
+            layoutMode: 'masonry',
+            animationEngine: 'css'
+        });
+    }
+    else {
+        $cont2.isotope({
+            itemSelector: '.portfolio-items-xxx .thumb-label-item-xxx',
+            masonry: {columnWidth: $('.isotope-item:first').width(), gutterWidth: 6},
+            filter: '*',
+            transformsEnabled: false,
+            layoutMode: 'masonry',
+            //  animationEngine: 'css'
+        });
+    }
 
     $('.portfolio-filter-container a').click(function() {
-        $cont.isotope({
+        $cont2.isotope({
             filter: this.getAttribute('data-filter')
         });
 
@@ -423,6 +468,7 @@ $(window).load(function() {
     });
 
     $('#masonry-elements,.portfolio-items').isotope('reLayout');
+	$('#masonry-elements,.portfolio-items-xxx').isotope('reLayout');
 });
 
 

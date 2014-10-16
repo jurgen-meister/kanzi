@@ -16433,6 +16433,23 @@ $(window).load(function() {
 
         return false;
     });
+	
+	var $cont2 = $('.portfolio-items-xxx');
+
+
+    $cont2.isotope({
+        itemSelector: '.portfolio-items-xxx .thumb-label-item-xxx',
+        masonry: {columnWidth: $('.isotope-item:first').width(), gutterWidth: 30},
+        filter: '*'
+    });
+
+    $('.portfolio-filter-container a').click(function() {
+        $cont2.isotope({
+            filter: this.getAttribute('data-filter')
+        });
+
+        return false;
+    });
 
     var lastClickFilter = null;
     $('.portfolio-filter a').click(function() {

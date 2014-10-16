@@ -66,6 +66,7 @@ jQuery(document).ready(function($) {
     $('#layout-mode').change(function() {
         $('#wrapper').attr('class', $('option:selected', this).val());
         $('#masonry-elements,.portfolio-items').isotope('reLayout');
+		$('#masonry-elements,.portfolio-items-xxx').isotope('reLayout');
     });
 
     $(document).on('click', '.predefined-skins', function() {
